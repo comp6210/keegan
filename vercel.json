@@ -1,4 +1,14 @@
 {
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/node",
+        "config": {
+          "installCommand": "npm install --force",
+          "buildCommand": "npm run build"
+        }
+      }
+    ],
     "engines": {
       "node": "20.x"
     }
